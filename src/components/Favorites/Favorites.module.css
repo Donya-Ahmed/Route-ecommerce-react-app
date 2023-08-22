@@ -1,0 +1,82 @@
+.heart {
+   position: fixed;
+   font-size: 1.5rem;
+   top: 3vh;
+   transform: translateY(0);
+   animation: fall 3s linear forwards;
+ }
+ .containerfav { 
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Pacifico', cursive;
+   margin: 0;
+   height: 100%;
+   width: 100%;
+   margin: auto;
+ }
+
+ @keyframes fall {
+  from {
+     transform: translateY(3vh) ; 
+     opacity: 1;
+  }
+  to {
+
+     transform: translateY(15vh) ; 
+     opacity: 0;
+
+  }
+} 
+.title{
+   position: relative;
+   z-index: 1000;
+   font-size: 4rem;
+}
+.ihover:hover{
+   color: red;
+}
+.wrapper {
+	position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+	animation:pulse 1s infinite;
+}
+
+
+.pulsingheart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px;
+} 
+
+
+.pulsingheart:before, .pulsingheart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #aa0000; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;
+  animation:pulsecolor 1s infinite;
+} 
+
+.pulsingheart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation:pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #dd0000}
+}

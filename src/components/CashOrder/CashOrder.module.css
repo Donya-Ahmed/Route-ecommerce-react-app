@@ -1,0 +1,7 @@
+.bgOrder{
+    background-image: url(../../assets/images/shopping-cart-with-wooden-elements.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}

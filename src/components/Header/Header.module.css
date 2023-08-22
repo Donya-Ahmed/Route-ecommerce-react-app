@@ -1,0 +1,7 @@
+.bgStyle{
+    background-image: url('../../assets/images/slider-2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 56vh;
+    background-size: 100% 100%;
+}

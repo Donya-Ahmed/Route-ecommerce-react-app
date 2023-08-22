@@ -1,0 +1,9 @@
+.btnWish{
+    border-color:red ;
+    color: red;
+    background-color: var(--light-color);
+  }
+  .btnWish:hover{
+    background-color: red;
+    color: var(--light-color);
+  }

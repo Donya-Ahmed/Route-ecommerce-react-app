@@ -1,0 +1,9 @@
+.cartTotal{
+    border: 5px solid  #ebebeb;
+}
+.bor{
+    border-bottom: 1px solid #ebebeb;
+}
+.ihover:hover{
+    color: red;
+}

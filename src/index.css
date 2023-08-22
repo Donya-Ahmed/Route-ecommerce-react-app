@@ -1,0 +1,228 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+@media (hover:hover) {
+  .product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+}
+@media (hover:none) {
+  
+}
+/* .product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+} */
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.btnCart{
+ border-color:var(--main-color) ;
+ color: var(--main-color);
+ background-color: var(--light-color);
+}
+.btnCart:hover{
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+.btn-CLEAR{
+  border-color:#ff0000a6 ;
+  color: #ff0000a6;
+  background-color: var(--light-color);
+}
+.btn-CLEAR:hover{
+  background-color: #ff0000a6;
+  color: var(--light-color);
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: var(--main-color);
+ 
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  .lds-facebookE{
+    top: 80% !important;
+  }
+  .w-40{
+    width: 40%;
+  }
+  .overlay{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+  }
+
+  .wrapper {
+    position: absolute;
+    animation:pulse 1s infinite;
+  }
+  .wrapperContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .pulsingheart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px;
+  } 
+  
+  
+  .pulsingheart:before, .pulsingheart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: #aa0000; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg);  
+    transform-origin: 0 100%;
+    animation:pulsecolor 1s infinite;
+  } 
+  
+  .pulsingheart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%;
+    animation:pulsecolor 1s infinite;
+  }
+  
+  @keyframes pulse {
+    10% {transform: scale(1.1)}
+  }
+  
+  @keyframes pulsecolor {
+    10% {background: #dd0000}
+  }
+  input[type='radio'] {
+    accent-color: var(--main-color);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    margin-right: 0.25rem;
+}
+.spanCart{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ef3636;
+  display: inline-block;
+ position: absolute;
+  top: -6px;
+  left: 25px;
+}
